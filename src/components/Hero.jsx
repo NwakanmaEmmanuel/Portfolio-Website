@@ -34,7 +34,7 @@ export default function Hero() {
       </h1>
 
       <p className="text-gray-500 text-lg max-w-md mb-10">
-        I build beautiful, performant web applications that users love.
+        My Name is Emmanuel Nwakanma,I build beautiful, performant web applications that users love.
       </p>
 
       {/* Buttons */}
