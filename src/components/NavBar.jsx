@@ -26,7 +26,7 @@ export default function Navbar() {
           <button
             key={link}
             onClick={() => scrollTo(link)}
-            className="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium"
+            className="text-sm text-gray-500 cursor-pointer hover:text-gray-900 transition-colors font-medium"
           >
             {link}
           </button>

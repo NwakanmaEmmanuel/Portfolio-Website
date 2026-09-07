@@ -21,14 +21,14 @@ export const projects = [
     tags: ["React", "External API", "Responsive"],
   },
   {
-    title: "UI Component Library",
-    desc: "Reusable component patterns built during training, covering forms, cards, modals, and responsive grid layouts.",
-    tags: ["React", "Tailwind CSS", "HTML/CSS"],
+    title: "Invoice App",
+    desc: "A full-featured invoicing application translated from a Figma design into a functional web app, covering invoice creation, client management, and clean, pixel-accurate UI.",
+    tags: ["React", "Tailwind CSS", "Figma to Code"],
   },
   {
-    title: "Weather Dashboard",
-    desc: "Real-time weather app integrating a third-party API with clean data visualization and dynamic background themes.",
-    tags: ["JavaScript", "API Integration", "CSS3"],
+    title: "TechHub Website",
+    desc: "Website built for a church-run tech hub, helping them establish an online presence to showcase their programs and connect with the community.",
+    tags: ["HTML/CSS", "JavaScript", "Responsive Design"],
   },
 ];
 
@@ -49,6 +49,6 @@ export const experience = [
 
 export const contact = {
   email: "nwakanmaemmanuel60@gmail.com",
-  linkedin: "https://linkedin.com",
-  github: "https://github.com",
+  linkedin: "https://www.linkedin.com/in/emmanuel-nwakanma-a21667378/",
+  github: "https://github.com/NWAKANMAEMMANUEL",
 };
