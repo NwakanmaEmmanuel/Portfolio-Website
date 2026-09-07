@@ -1,8 +1,30 @@
 import { useState, useEffect } from "react";
+import {  FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+
 
 export default function Hero() {
   const [typed, setTyped] = useState("");
   const full = "Frontend Developer";
+
+   const socials = [
+  { 
+    label: "GitHub", 
+    icon: <FaGithub className="w-5 h-5" />, 
+    url: "https://github.com/NWAKANMAEMMANUEL" 
+  },
+  { 
+    label: "LinkedIn", 
+    icon: <FaLinkedin className="w-5 h-5" />, 
+    url: "https://www.linkedin.com/in/emmanuel-nwakanma-a21667378" 
+  },
+  { 
+    label: "Email", 
+    icon: <Mail className="w-5 h-5" />, 
+    url: "mailto:nwakanmaemmanuel60@gmail.com" 
+  },
+];
 
   useEffect(() => {
     let i = 0;
@@ -55,19 +77,18 @@ export default function Hero() {
 
       {/* Social icons */}
       <div className="flex gap-3">
-        {[
-          { label: "GitHub", icon: "⌥" },
-          { label: "LinkedIn", icon: "in" },
-          { label: "Email", icon: "✉" },
-        ].map(({ label, icon }) => (
-          <button
-            key={label}
-            title={label}
-            className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-sm text-gray-500 hover:border-gray-900 hover:text-gray-900 transition-colors"
-          >
-            {icon}
-          </button>
-        ))}
+        {socials.map(({ label, icon, url }) => (
+        <a
+          key={label}
+          href={url}
+          title={label}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-gray-900 hover:text-gray-900 transition-colors"
+        >
+          {icon}
+        </a>
+      ))}
       </div>
     </section>
   );
