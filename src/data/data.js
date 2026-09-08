@@ -14,21 +14,25 @@ export const projects = [
     title: "Notes Management App",
     desc: "Full-featured note-taking app with create, edit, delete, and search functionality. Seamless CRUD operations with async state management.",
     tags: ["React", "JavaScript", "REST API"],
+    link: "https://mini-note-board.vercel.app/"
   },
   {
     title: "Book Search Platform",
     desc: "Dynamic book discovery app consuming a public API, with filtering, detail views, and a mobile-first accessible design.",
     tags: ["React", "External API", "Responsive"],
+    link: "https://use-books-project.vercel.app/"
   },
   {
     title: "Invoice App",
     desc: "A full-featured invoicing application translated from a Figma design into a functional web app, covering invoice creation, client management, and clean, pixel-accurate UI.",
     tags: ["React", "Tailwind CSS", "Figma to Code"],
+    link: "https://invoice-management-app-sigma.vercel.app/"
   },
   {
     title: "TechHub Website",
     desc: "Website built for a church-run tech hub, helping them establish an online presence to showcase their programs and connect with the community.",
     tags: ["HTML/CSS", "JavaScript", "Responsive Design"],
+    link: "https://capstone-techhub-website.vercel.app/"
   },
 ];
 

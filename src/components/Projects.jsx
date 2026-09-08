@@ -1,11 +1,16 @@
 import { projects } from "../data/data";
 
-function ProjectCard({ title, desc, tags }) {
+function ProjectCard({ title, desc, tags, link }) {
   return (
-    <div className="bg-gray-50 border border-gray-200 rounded-2xl p-7 hover:border-gray-400 hover:bg-white hover:-translate-y-1 hover:shadow-md transition-all duration-200 cursor-default">
+    
+      <a href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block bg-gray-50 border border-gray-200 rounded-2xl p-7 hover:border-gray-400 hover:bg-white hover:-translate-y-1 hover:shadow-md transition-all duration-200"
+    >
       <div className="flex justify-between items-start mb-3">
         <h3 className="font-bold text-gray-900 text-base">{title}</h3>
-        <span className="text-gray-400  text-xl ml-2 cursor-pointer hover:scale-150 ">↗</span>
+        <span className="text-gray-400 text-xl ml-2 hover:scale-150 transition-transform">↗</span>
       </div>
       <p className="text-sm text-gray-500 leading-relaxed mb-5">{desc}</p>
       <div className="flex flex-wrap gap-2">
@@ -18,7 +23,7 @@ function ProjectCard({ title, desc, tags }) {
           </span>
         ))}
       </div>
-    </div>
+    </a>
   );
 }
 
