@@ -20,7 +20,7 @@ export default function Navbar() {
         scrolled ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100" : "bg-transparent"
       }`}
     >
-      <span className="font-bold text-xl text-gray-900 tracking-tight">Portfolio</span>
+      <span className="font-bold text-xl text-gray-900 tracking-tight">Emmanuel Nwakanma</span>
       <div className="flex gap-8">
         {navLinks.map((link) => (
           <button
